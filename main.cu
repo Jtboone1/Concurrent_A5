@@ -23,9 +23,11 @@ void filter(int* image, int* new_image)
         {0, 0, 3,   2,   2,   2, 3, 0, 0},
     };
 
+    // Idiomatic way to get to get the rank of each thread in order when blocks are involved.
     size_t max_pixels = 65536 / (blockDim.x * gridDim.x);
     size_t index = (blockIdx.x * blockDim.x + threadIdx.x) * max_pixels;
 
+    // Each thread will be responsible for a specific amount of pixels.
     for (int i = index; i < index + max_pixels && index < 65536; i++)
     {
         // Convert 1D array of pixel to get 2D coordinate.
