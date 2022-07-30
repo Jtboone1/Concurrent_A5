@@ -1,7 +1,7 @@
 # Description
 Concurrent Programming assignment #5. This assignment was done in pairs:
 
-Jarrod Boone 201714680
+Jarrod Boone 201714680<br/>
 Yash Patel 201842812
 
 ## Implementation
