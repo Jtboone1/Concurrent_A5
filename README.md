@@ -1,4 +1,10 @@
-# Implementation
+# Description
+Concurrent Programming assignment #5. This assignment was done in pairs:
+
+Jarrod Boone 201714680
+Yash Patel 201842812
+
+## Implementation
 We used CUDA to create an image filter that divides the number of pixels
 needing to be filtered with the number of total threads the user specifies.
 
